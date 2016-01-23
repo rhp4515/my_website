@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Hari Prasath Raman</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="http://www.fsl.cs.stonybrook.edu/images/fsl-logo.gif">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/hari.png" alt="Hari Prasath Raman" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Hari Prasath Raman</h1>
+                <h2 class="desc">Graduate Student Researcher, File Systems Lab, Stony Brook University</h2>   
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/rhp4515"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a href="http://www.linkedin.com/in/hariprar"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/rhp4515"><i class="fa fa-github-alt"></i></a></li>                  
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:hraman@cs.stonybrook.edu" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I'm a Master's student in Department of Computer Science at Stony Brook University. I started my graduate course on Fall 2015. Been working in File Systems Lab, supervised by Prof. Erez Zadok, since January 2016. My research interests are broadly related to File Systems, Storage and Machine Learning.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Course Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="#"></a>xcipher - System Call in Linux Kernel</h3>
+                                <p class="summary"><ul>
+                                <li>Implemented a fully functioning system call to encrypt/decrypt a file with user given parameters such as encryption/decryption key, cipher method, etc.
+                                <li>A preamble including the information about cipher method used and key was added to the encrypted file to support multi environment support.
+                                <li>Linux in-built CryptoAPI was used for developing the system call.
+                                </ul></p>
+                               <!--  <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p> -->
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="#"></a>Anti-Malware File System (AMFS)</h3>
+                                <p class="summary"><ul>
+                                <li>A stackable file system (similar to wrapfs) to quarantine malicious files based on user defined virus definition database</li>
+                                <li>Implement IOCTLs for updating and maintaining virus definition database</li>
+                                <li>In-Kernel implementation to scan files for malicious patterns and quarantine them during read/write syscalls</li>
+                                <li>Prohibits all file operations on quarantined files except allowing them to delete (only by user with root previleges)</li>
+                                </ul></p>
+                               <!--  <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p> -->
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="#"></a>Asynchronous Job Execution Manager</h3>
+                                <p class="summary"><ul>
+                                <li>Implemented a kernel module to execute jobs asynchronously, a producer-consumer methodology</li>
+                                <li>By using Linux kernel's workqueue API, CPU heavy jobs were added to the workqueues based on priority and executed asynchronously in the kernel</li>
+                                <li>Implemented a custom data structure to hold the job details for supporting cancellation, priority change and listing the jobs</li>
+                                <li>Netlink sockets were used for communicating between userland and kernel</li>
+                                </ul></p>
+                               <!--  <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p> -->
+                            </div><!--//item-->
+                            
+                            
+                            <!-- <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a> -->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="publication section">
+                    <div class="section-inner">
+                        <h2 class="heading">Publication</h2>
+                        <div class="content">
+                            <div class="item">
+                            <ul><li>
+                                <h3 class="title"> <a href="https://dl.acm.org/citation.cfm?id=2532802&amp;dl=ACM&amp;coll=DL">SHS-HTTPS enforcer: enforcing HTTPS and preventing MITM attacks </a></span> </h3>
+                                <p class="authors"> Sugavanesh Balasubramanian, Hari Prasath Raman and S. Selvakumar</p>
+                            </li></ul>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Software Engineer - <span class="place"><a href="https://www.zynga.com/">Zynga Game Network India Pvt Ltd</a></span> <span class="year">(2013 - 2015)</span></h3>
+                                <p><ul>
+                                    <li>Rich experience in working with legacy codes and designing new features compatible with existing features</li>
+                                    <li>Optimized initial game loading time by dynamically predetermining assets based on player's game state</li>
+                                    <li>Improved frames per second (performance of game) by lazy loading of assets</li>
+                                    <li>Developed a system to generate tasks in the game by dynamically determining the player capability to improve player’s
+                                    engagement with the game</li>
+                                    <li>Designed and mentored a scalable technique to grant players with virtual goods over the period of time</li>
+                                    <li>Part of knowledge transfer team to transition FarmVille2 game back to Studio-I, where my work included
+                                    understanding the game code base, debugging techniques, coding practice and sharing the knowledge with the team</li>
+                                </ul></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Engineering Intern - <span class="place"><a href="http://www.cisco.com/c/en_in/index.html">Cisco Systems (India) Pvt Ltd, Chennai</a></span> <span class="year">(May 2012 - July 2012)</span></h3>
+                                <p><ul><li>Developed utility tools to automate End to End Recording Reliability Testing by developing an algorithm to schedule program recording in multiple Set Top Box (STB) with configurable stress levels using Python. The tool reduced the time spent on reliability testing by 90%.</li></ul></p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                <section class="courses section">
+                    <div class="section-inner">
+                        <h2 class="heading">Courses</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h5 class="number">CSE-506 <span class="title"><a href="#">Operating Systems</a></span> <span class="instructor">(Erez Zadok, Fall 2015)</span> </h5>
+                                <h5 class="number">CSE-548 <span class="title"><a href="#">Analysis of Algorithms</a></span> <span class="instructor">(Jie Gao, Fall 2015)</span> </h5>
+                                <h5 class="number">CSE-549 <span class="title"><a href="#">Computational Biology</a></span> <span class="instructor">(Robert Patro, Fall 2015)</span> </h5>
+                                <h5 class="number">CSE-591 <span class="title"><a href="#">Fundamentals of Data Science</a></span> <span class="instructor">(Leman Akoglu, Fall 2015)</span> </h5>
+                               <!--  <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p> -->
+                            </div><!--//item-->                         
+                            
+                            <!-- <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a> -->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> M.S. in Computer Science</h3>
+                                <h4 class="university"><a href="http://www.stonybrook.edu/">Stony Brook University </a><span class="year">(2015-2017)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> B.Tech in Computer Science &amp; Engineering</h3>
+                                <h4 class="university"><a href="http://nitt.edu/">National Institute of Technology, Trichy </a><span class="year">(2009-2013)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Tamil</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Credits to <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> and others involved </small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
